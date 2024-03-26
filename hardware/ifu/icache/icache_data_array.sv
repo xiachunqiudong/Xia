@@ -12,7 +12,13 @@ module icache_data_array
   input  logic                          icache_wen_i
 );
 
-
+  sram data_array#(
+    .DATA_WIDTH(),
+    .NUM_WORDS ()
+  )(
+    .clk_i(),
+    .req_i()
+  );
   
 
 
